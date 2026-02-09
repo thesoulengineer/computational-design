@@ -2,8 +2,9 @@
 
 **Research Proposal for BE2R Lab Selection**
 
-**Author:** Katlego  
-**Institution:** ITMO University, Mechatronics & Robotics  
+**Author:** Katlego Kgosibodiba  
+Master's Student, Robotics & Artifical Intelligence  
+ITMO University, Saint Petersburg, Russia  
 **Date:** February 9, 2026
 
 ---
@@ -481,14 +482,6 @@ energy-aware-morphology/
 │   └── hopper_visualizer.py
 └── docs/
 ```
-
----
-
-## Contact
-
-**Katlego Kgosibodiba**  
-Master's Student, Robotics & Artifical Intelligence  
-ITMO University, Saint Petersburg, Russia  
 
 ---
 
