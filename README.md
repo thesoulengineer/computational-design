@@ -486,7 +486,7 @@ energy-aware-morphology/
 
 ## Contact
 
-**Katlego [Last Name]**  
+**Katlego Kgosibodiba**  
 Master's Student, Robotics & Artifical Intelligence  
 ITMO University, Saint Petersburg, Russia  
 
@@ -494,4 +494,3 @@ ITMO University, Saint Petersburg, Russia
 
 **Last Updated:** February 9, 2026  
 **Version:** 1.0  
-**Status:** Submitted for BE2R Lab Selection
