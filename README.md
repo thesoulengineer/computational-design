@@ -114,36 +114,32 @@ Even the most recent morphology optimization work (2025) has **zero energy model
 We propose co-optimizing morphology and control with **all five energy components**:
 
 #### **1. Mechanical Work (What papers measure)**
-```
-E_mech = ∫ |τ · ω| dt
-```
+
+$$E_{\text{mech}} = \int |\tau \cdot \omega| \, dt$$
 
 #### **2. Copper Loss (I²R heating) - NOVEL**
-```
-I = τ_motor / K_t
-E_copper = ∫ I² · R dt
-```
+$$I = \frac{\tau_{\text{motor}}}{K_t}$$
+
+$$E_{\text{copper}} = \int I^2 \cdot R \, dt$$
+
 Where:
 - K_t = motor torque constant
 - R = winding resistance
 - Accounts for gear ratio effect on current
 
 #### **3. Gear Friction Loss - NOVEL**
-```
-E_gear = ∫ |τ · ω| · (1 - η_gear) dt
-```
+
+$$E_{\text{gear}} = \int |\tau \cdot \omega| \cdot (1 - \eta_{\text{gear}}) \, dt$$
 Where η_gear ≈ 0.85 for typical planetary gears
 
 #### **4. Iron Loss (Eddy currents) - NOVEL**
-```
-E_iron = ∫ k_iron · ω_motor² dt
-```
+
+$$E_{\text{iron}} = \int k_{\text{iron}} \cdot \omega_{\text{motor}}^2 \, dt$$
 Speed-dependent magnetic losses
 
 #### **5. Holding Torque Loss - NOVEL**
-```
-E_hold = ∫ I_hold² · R dt  (when |ω| < ε and |τ| > τ_min)
-```
+$$E_{\text{hold}} = \int I_{\text{hold}}^2 \cdot R \, dt \quad (\text{when } |\omega| < \varepsilon \text{ and } |\tau| > \tau_{\text{min}})$$
+
 Static current to maintain position
 
 ### 3.2 Optimization Framework
@@ -155,14 +151,13 @@ Static current to maintain position
 - Passive elements (springs, dampers)
 
 **Objective function:**
-```
-minimize: CoT_electrical = E_total / (m · g · d)
+
+$$\text{minimize: } \text{CoT}_{\text{electrical}} = \frac{E_{\text{total}}}{m \cdot g \cdot d}$$
 
 subject to:
   - Performance constraints (speed, stability)
   - Kinematic constraints (workspace)
   - Manufacturing constraints (realistic values)
-```
 
 **Multi-objective formulation:**
 ```
