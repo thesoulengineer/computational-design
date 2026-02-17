@@ -337,30 +337,6 @@ This research provides the **optimal morphology design**. The thesis will then d
    - Applicable to any legged robot (biped, quadruped, hexapod)
    - Framework for future morphology optimization
 
-### 7.2 Practical Impact
-
-**For warehouse robotics:**
-- 2× battery life → 50% fewer robots needed
-- $40M/year savings for large facilities (Amazon-scale)
-- Enables new applications (outdoor, long-duration tasks)
-
-**For commercial platforms:**
-- Spot: 90min → 180min runtime
-- Go1: 1hr → 2hr runtime
-- Direct commercial value
-
-### 7.3 Publication Potential
-
-**Target venues:**
-- IROS 2026 (submission March 2026)
-- ICRA 2027 (submission September 2026)
-- IEEE Transactions on Robotics (journal)
-
-**Novelty:**
-- First full energy model for morphology optimization
-- Clear quantitative results (40-60% improvement)
-- Bio-inspired validation
-
 ---
 
 ## 8. Risks & Mitigation
@@ -390,12 +366,6 @@ This research provides the **optimal morphology design**. The thesis will then d
 ## 9. Conclusion
 
 This research addresses a critical gap: **zero papers optimize morphology with full energy models**. Our preliminary results show traditional approaches can worsen efficiency by 3-4×, while energy-aware design achieves 40-60% improvements.
-
-**What we offer:**
-- ✓ Novel contribution (full electromechanical model)
-- ✓ Clear evidence (331% vs 46% in demo)
-- ✓ Feasible plan (12 weeks, proven methods)
-- ✓ Practical impact (2× battery life for warehouses)
 
 **What we need:**
 - BE2R lab resources (computational, supervision)
@@ -445,8 +415,6 @@ Demonstrates comparison between:
 - Traditional optimization (kinetostatics only)
 - Energy-aware optimization (full model)
 
-**Results:** 331% worse vs 46% better
-
 **Figure:** `energy_optimization_comparison.png`
 
 ### A.2 Hopping Robot Framework (In Progress)
@@ -481,4 +449,4 @@ energy-aware-morphology/
 ---
 
 **Last Updated:** February 9, 2026  
-**Version:** 1.0  
+**Version:** 1.01  
